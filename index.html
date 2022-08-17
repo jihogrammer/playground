@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title>Jihogrammer</title>
+	</head>
+	<body>
+		<h1>Hello World!</h1>
+		<div id="data">loading...</div>
+		<script>
+			fetch('http://43.200.83.87:50983')
+				.then(response => response.json())
+				.then(json => {
+					const keys = Object.keys(json);
+					const values = keys.map(key => json[key]);
+					const parent = document.getElementById('data');
+					parent.innerText = '';
+
+					keys
+						.map(key => {
+							const p = document.createElement('p');
+							p.innerText = `${key} ${json[key]}`;
+							return p;
+						})
+						.forEach(child => parent.appendChild(child));
+				})
+		</script>
+	</body>
+</html>
