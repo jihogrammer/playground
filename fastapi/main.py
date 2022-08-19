@@ -8,7 +8,8 @@ origins = [
     "http://localhost",
     "http://localhost:8000",
     "http://localhost:3000",
-    "http://http://43.200.83.87:50983"
+    "http://http://43.200.83.87:50983",
+    "https://jihogrammer.github.io",
 ]
 
 app.add_middleware(
