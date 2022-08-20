@@ -1,6 +1,10 @@
 from typing import Union
+import json
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+
+from stock.service import service as stock_service
 
 
 app = FastAPI()
@@ -26,6 +30,6 @@ def read_root():
     return {"Hello": "World"}
 
 
-@app.get("/items/{item_id}")
-def read_item(item_id: int, q: Union[str, None] = None):
-    return {"item_id": item_id, "q": q}
+@app.get("/stock")
+def read_item(code: Union[str, None] = '005930'):
+    return stock_service.fetch_day_candle_one_year(code)
