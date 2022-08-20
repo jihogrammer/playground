@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    padding: 1rem;
+    width: 100vw;
+    min-height: 3rem;
+    background-color: aliceblue;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+main {
+    height: calc(100vh - 3rem);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+aside {
+    padding: 1.5rem;
+    height: 100%;
+    background-color: antiquewhite;
+}
+
+section {
+    padding: 2rem;
+    height: 100%;
+    background-color: cadetblue;
+
+    flex-grow: 1;
+}
