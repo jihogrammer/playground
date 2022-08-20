@@ -1,2 +1,0 @@
-*{box-sizing:border-box;margin:0;padding:0}nav{align-items:center;background-color:#f0f8ff;justify-content:flex-start;min-height:3rem;padding:1rem;width:100vw}main,nav{display:flex}main{align-items:flex-start;height:calc(100vh - 3rem);justify-content:space-between}aside{background-color:#faebd7;height:100%;padding:1.5rem}section{background-color:#5f9ea0;flex-grow:1;height:100%;padding:2rem}
-/*# sourceMappingURL=main.07cafdd5.css.map*/
